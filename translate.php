@@ -12,6 +12,10 @@ foreach ($xml as $res) {
     $fixedString = substr($fixedString, 1, strlen($fixedString) - 2);
     $fixedString = html_entity_decode($fixedString);
     $fixedString = str_replace("'", "\'", $fixedString);
+    $fixedString = str_replace("\n", "\\n", $fixedString);
+    $fixedString = str_replace("href=https://github.com/kalaspuffar/secure-quick-reliable-login>", "href=\"https://github.com/kalaspuffar/secure-quick-reliable-login\">", $fixedString);
+    $fixedString = str_replace("href=https://grc.com>", "href=\"https://grc.com\">", $fixedString);
+    
     $data .= $fixedString;
     $data .= "</string>\n";
 }
