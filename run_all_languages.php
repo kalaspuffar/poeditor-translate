@@ -1,6 +1,7 @@
 <?php
 $languages = array(
     'ar' => 'Arabic',
+    'cs' => 'Czech',
     'nl' => 'Dutch',
     'en' => 'English',
     'fr' => 'French',
@@ -10,8 +11,8 @@ $languages = array(
     'ja' => 'Japanese',
     'no' => 'Norwegian',
     'ru' => 'Russian',
-    'es' => 'Spanish',
     'sl' => 'Slovenian',
+    'es' => 'Spanish',
     'sv' => 'Swedish',
 );
 
